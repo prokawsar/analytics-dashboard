@@ -45,4 +45,4 @@
 	});
 </script>
 
-<canvas id="chart" bind:this={canvasRef} height="400" width="400" />
+<canvas id="chart" bind:this={canvasRef} />
