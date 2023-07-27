@@ -11,7 +11,7 @@
 
 <div class="py-10 px-12 text-center rounded-md bg-gray-600 text-white">
 	<p class="text-3xl font-bold">{rating}</p>
-	<p class="text-md font-bold">{title}</p>
+	<p class="text-sm font-bold">{title}</p>
 	{#if type}
 		<p class="text-sm text-gray-400 mt-2">
 			<span class="{textColor} font-bold">{sign} {changeValue && Math.abs(changeValue)}% </span>
