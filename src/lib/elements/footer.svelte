@@ -1,4 +1,4 @@
-<footer class="pb-6 absolute w-full bottom-0 bg-gray-800">
+<footer class="pb-6 mt-10 w-full bottom-0 bg-gray-800">
 	<div class="container mx-auto px-4">
 		<hr class="mb-6 border-b-1 border-gray-600" />
 		<div class="flex flex-wrap items-center md:justify-between justify-center">

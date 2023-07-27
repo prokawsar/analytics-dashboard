@@ -1,4 +1,5 @@
 <script>
+	import Doughnut from '$lib/charts/doughnut.svelte';
 	import ReviewsTable from '$lib/elements/reviewsTable.svelte';
 </script>
 
@@ -7,5 +8,8 @@
 		<p class="font-bold">Google Reviews</p>
 		<ReviewsTable />
 	</div>
-	<div class="w-2/5 bg-gray-600 h-40 rounded-md text-white p-2">Charts.js</div>
+	<div class="w-2/5 bg-gray-600 rounded-md text-white p-2">
+		Reviews by Location
+		<Doughnut />
+	</div>
 </div>
