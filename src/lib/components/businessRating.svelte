@@ -1,5 +1,5 @@
 <div class="flex flex-row gap-1">
-	<div class="w-3/4 bg-gray-600 h-20 rounded-md text-white p-2">Charts.js</div>
+	<div class="w-3/4 bg-gray-600 h-40 rounded-md text-white p-2">Charts.js</div>
 	<div class="w-1/4 bg-gray-600 rounded-md p-2 text-white">
 		<p class="font-bold">Google Ratings</p>
 		<table>
