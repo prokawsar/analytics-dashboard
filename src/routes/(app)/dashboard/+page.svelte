@@ -8,7 +8,7 @@
 	<title>Dashboard starter</title>
 </svelte:head>
 
-<div class="container mx-auto flex flex-col gap-1 mt-5">
+<div class="container mx-auto flex flex-col gap-1 mt-5 px-1 md:px-0">
 	<div>
 		<BusinessStats />
 	</div>

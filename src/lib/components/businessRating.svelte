@@ -11,7 +11,7 @@
 		</div>
 	</div>
 	<div class="md:w-1/3 bg-gray-600 rounded-md p-2 text-white">
-		<p class="font-bold">Google Ratings</p>
+		<p class="">Google Ratings</p>
 
 		<RatingTable />
 	</div>
