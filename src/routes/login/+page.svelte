@@ -1,5 +1,10 @@
 <script>
 	import '../../app.css';
+	import { browser } from '$app/environment';
+	import posthog from 'posthog-js';
+	import { page } from '$app/stores';
+
+	$: $page.url.pathname, browser && posthog.capture('$pageview', { loginpage: true });
 
 	export let form;
 </script>
