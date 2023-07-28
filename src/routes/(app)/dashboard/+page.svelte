@@ -2,7 +2,6 @@
 	import BusinessRating from '$lib/components/businessRating.svelte';
 	import BusinessReviews from '$lib/components/businessReviews.svelte';
 	import BusinessStats from '$lib/components/businessStats.svelte';
-	import Stats from '$lib/elements/stats.svelte';
 </script>
 
 <svelte:head>
