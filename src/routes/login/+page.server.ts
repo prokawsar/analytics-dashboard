@@ -13,7 +13,7 @@ export const actions: Actions = {
 		const email = data.get('email');
 		const password = data.get('password');
 
-		if (email == 'email@email.com' && password == 'admin') {
+		if (email == 'admin@admin.com' && password == 'admin') {
 			cookies.set('user', 'true');
 			throw redirect(302, '/dashboard');
 		} else {
