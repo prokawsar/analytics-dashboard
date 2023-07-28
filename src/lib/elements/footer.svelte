@@ -4,8 +4,10 @@
 		<div class="flex flex-wrap items-center md:justify-between justify-center">
 			<div class="w-full md:w-4/12 px-4">
 				<div class="text-sm text-gray-500 font-semibold py-1 text-center md:text-left">
-					Copyright © 2023 <a href="#" class=" hover:text-gray-300 text-sm font-semibold py-1"
-						>Company name</a>
+					Copyright © 2023 Build by <a
+						target="_blank"
+						href="https://github.com/prokawsar"
+						class=" hover:text-gray-300 text-sm font-semibold py-1">Kawsar Ahmed</a>
 				</div>
 			</div>
 			<div class="w-full md:w-8/12 px-4">

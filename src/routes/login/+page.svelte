@@ -1,5 +1,7 @@
 <script>
 	import '../../app.css';
+
+	export let form;
 </script>
 
 <svelte:head>
@@ -39,15 +41,21 @@
 						<hr class="mt-6 border-b-1 border-gray-300" />
 					</div>
 					<div class="flex-auto px-4 lg:px-10 py-10 pt-0">
-						<div class="text-gray-400 text-center mb-3 font-bold">
+						<div class="text-gray-400 flex flex-col gap-1 text-center mb-3 font-bold">
+							{#if form?.incorrect}
+								<small class="text-red-400 p-2 outline-dashed outline-1">
+									Incorrect email or password
+								</small>
+							{/if}
 							<small>Or sign in with credentials</small>
 						</div>
-						<form>
+						<form method="post" action="?/login">
 							<div class="relative w-full mb-3">
 								<label class="block uppercase text-gray-600 text-xs font-bold mb-2" for="grid-email"
 									>Email</label>
 								<input
-									id="grid-email"
+									id="email"
+									name="email"
 									type="email"
 									autocomplete="off"
 									class="border-0 px-3 py-3 placeholder-gray-300 text-gray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
@@ -59,7 +67,8 @@
 									class="block uppercase text-gray-600 text-xs font-bold mb-2"
 									for="grid-password">Password</label>
 								<input
-									id="grid-password"
+									id="password"
+									name="password"
 									type="password"
 									class="border-0 px-3 py-3 placeholder-gray-300 text-gray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
 									placeholder="Password" />
@@ -76,7 +85,7 @@
 							<div class="text-center mt-6">
 								<button
 									class="bg-gray-800 text-white active:bg-gray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
-									type="button">Sign In</button>
+									type="submit">Sign In</button>
 							</div>
 						</form>
 					</div>
