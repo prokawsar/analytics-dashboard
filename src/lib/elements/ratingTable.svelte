@@ -43,7 +43,7 @@
 					<div>{data['Google Rating']}</div>
 					<div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700">
 						<div
-							class="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500"
+							class="bg-blue-400 h-1.5 rounded-full dark:bg-blue-500"
 							style="width: {(data['Google Rating'] / 5.0) * 100}%" />
 					</div>
 				</td>
@@ -54,7 +54,7 @@
 						</div>
 						<div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700">
 							<div
-								class="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500"
+								class="bg-blue-400 h-1.5 rounded-full dark:bg-blue-500"
 								style="width: {(data['Total Reviews'] / 2000) * 100}%" />
 						</div>
 					</div>

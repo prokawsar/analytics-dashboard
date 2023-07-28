@@ -9,7 +9,7 @@
 	<title>Dashboard starter</title>
 </svelte:head>
 
-<div class="container mx-auto flex flex-col gap-1">
+<div class="container mx-auto flex flex-col gap-1 mt-5">
 	<div>
 		<BusinessStats />
 		<!-- <Stats title="Average Google Review" rating={4.56} /> -->

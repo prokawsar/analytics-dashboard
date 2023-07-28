@@ -8,10 +8,11 @@
 </script>
 
 <nav
-	class="top-0 left-0 w-full z-10 bg-transparent md:flex-row md:flex-nowrap md:justify-start flex items-center p-4">
+	class="top-0 left-0 w-full shadow-md shadow-gray-600 z-10 bg-gray-700 md:flex-row md:flex-nowrap md:justify-start flex items-center p-4">
 	<div
 		class="w-full mx-autp items-center flex justify-between md:flex-nowrap flex-wrap md:px-10 px-4">
-		<a class=" text-sm uppercase hidden lg:inline-block font-semibold" href="/">Dashboard</a>
+		<a class=" text-sm uppercase text-white hidden lg:inline-block font-semibold" href="/"
+			>Dashboard</a>
 		<form class="md:flex hidden flex-row flex-wrap items-center lg:ml-auto mr-3">
 			<div class="relative flex w-full flex-wrap items-stretch">
 				<span
@@ -30,7 +31,7 @@
 				<a
 					class="cursor-pointer h-12 w-12 flex justify-center items-center"
 					on:click={() => (showNotification = !showNotification)}>
-					<Fa icon={faBell} />
+					<Fa icon={faBell} color="white" />
 				</a>
 				<Notification bind:show={showNotification} />
 			</div>

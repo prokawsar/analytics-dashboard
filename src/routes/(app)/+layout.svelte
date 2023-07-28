@@ -4,8 +4,10 @@
 	import '../../app.css';
 </script>
 
-<Nav />
+<div class="bg-slate-800">
+	<Nav />
 
-<slot />
+	<slot />
 
-<Footer />
+	<Footer />
+</div>
