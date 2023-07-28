@@ -45,19 +45,21 @@
 
 <table class="w-full text-left mt-2">
 	<thead>
-		<th class="text-xs text-gray-400"> Review Date </th>
-		<th class="text-xs text-gray-400"> Location </th>
-		<th class="text-xs text-gray-400"> Profile Image </th>
-		<th class="text-xs text-gray-400"> Display Name </th>
-		<th class="text-xs text-gray-400"> Rating </th>
-		<th class="text-xs text-gray-400"> Reviews </th>
+		<tr class="border-b border-gray-400">
+			<th class="text-xs pb-1 text-gray-400"> Review Date </th>
+			<th class="text-xs pb-1 text-gray-400"> Location </th>
+			<th class="text-xs pb-1 text-gray-400"> Profile Image </th>
+			<th class="text-xs pb-1 text-gray-400"> Display Name </th>
+			<th class="text-xs pb-1 text-gray-400"> Rating </th>
+			<th class="text-xs pb-1 text-gray-400"> Reviews </th>
+		</tr>
 	</thead>
 	<tbody>
 		{#each sampleData as data}
-			<tr class="">
-				<td class="text-xs"> {data['Review Date']} </td>
-				<td class="text-xs"> {data.Location}</td>
-				<td class="text-xs w-[90px]">
+			<tr class="border-b border-gray-400">
+				<td class="text-xs px-1 w-[100px]"> {data['Review Date']} </td>
+				<td class="text-xs px-1"> {data.Location}</td>
+				<td class="text-xs px-1 w-[90px]">
 					<span
 						class="w-10 h-10 text-sm text-white bg-blueGray-200 inline-flex items-center justify-center rounded-full">
 						<img
@@ -66,16 +68,16 @@
 							src="https://i.pravatar.cc/300" />
 					</span>
 				</td>
-				<td class="text-xs"> {data['Display Name']} </td>
-				<td class="text-xs flex flex-row gap-1 items-center">
-					{data.Rating}
+				<td class="text-xs px-1 w-[120px]"> {data['Display Name']} </td>
+				<td class="text-xs px-1 flex flex-row gap-1 items-center">
+					<p>{data.Rating}</p>
 					<div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700">
 						<div
 							class="bg-blue-400 h-1.5 rounded-full dark:bg-blue-500"
 							style="width: {(data.Rating / 5.0) * 100}%" />
 					</div>
 				</td>
-				<td class="text-xs max-w-[100px]"> {data.Reviews} </td>
+				<td class="text-xs px-1 max-w-[100px]"> {data.Reviews} </td>
 			</tr>
 		{/each}
 	</tbody>

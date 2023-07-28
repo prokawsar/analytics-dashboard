@@ -29,17 +29,19 @@
 	];
 </script>
 
-<table class="w-full text-left mt-2">
+<table class="w-full text-left mt-2 border-spacing-2">
 	<thead>
-		<th class="text-xs text-gray-400"> Location name </th>
-		<th class="text-xs text-gray-400"> Google Rating </th>
-		<th class="text-xs text-gray-400"> Total Reviews </th>
+		<tr class="border-b border-gray-400">
+			<th class="text-xs pb-1 text-gray-400"> Location name </th>
+			<th class="text-xs pb-1 text-gray-400"> Google Rating </th>
+			<th class="text-xs pb-1 text-gray-400"> Total Reviews </th>
+		</tr>
 	</thead>
 	<tbody>
 		{#each sampleLocationData as data}
-			<tr>
-				<td class="text-xs"> {data['Location name']} </td>
-				<td class="text-xs flex flex-row gap-1 items-center">
+			<tr class="border-b border-gray-400">
+				<td class="text-xs py-1"> {data['Location name']} </td>
+				<td class="text-xs py-1 flex flex-row gap-1 items-center">
 					<div>{data['Google Rating']}</div>
 					<div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700">
 						<div
@@ -47,7 +49,7 @@
 							style="width: {(data['Google Rating'] / 5.0) * 100}%" />
 					</div>
 				</td>
-				<td class="text-xs">
+				<td class="text-xs p-1">
 					<div class="flex flex-row items-center gap-1">
 						<div>
 							{data['Total Reviews']}
