@@ -10,7 +10,7 @@
 	];
 </script>
 
-<div class="flex flex-row gap-1">
+<div class="flex flex-col md:flex-row gap-1">
 	{#each stats as card}
 		<Stats title={card.title} changeValue={card.changeValue} type={card.type} rating={4.56} />
 	{/each}
