@@ -8,7 +8,7 @@
 	const data = {
 		datasets: [
 			{
-				label: 'Date 1',
+				label: 'Data 1',
 				data: [
 					{ x: '2017-01-05', y: 35 },
 					{ x: '2017-01-10', y: 15 },
@@ -27,7 +27,7 @@
 				]
 			},
 			{
-				label: 'Date 2',
+				label: 'Data 2',
 				data: [
 					{ x: '2017-01-05', y: 25 },
 					{ x: '2017-01-10', y: 25 },
@@ -53,6 +53,14 @@
 			type: 'line',
 			data: data,
 			options: {
+				elements: {
+					line: {
+						tension: 0.5
+					},
+					point: {
+						hoverRadius: 10
+					}
+				},
 				responsive: true,
 				maintainAspectRatio: false,
 				plugins: {
@@ -70,10 +78,20 @@
 				},
 				scales: {
 					y: {
-						// the data minimum used for determining the ticks is Math.min(dataMin, suggestedMin)
-						suggestedMin: 30,
-						// the data maximum used for determining the ticks is Math.max(dataMax, suggestedMax)
-						suggestedMax: 50
+						grid: {
+							display: false
+						},
+						ticks: {
+							color: 'White'
+						}
+					},
+					x: {
+						ticks: {
+							color: 'White'
+						},
+						grid: {
+							display: false
+						}
 					}
 				}
 			}
