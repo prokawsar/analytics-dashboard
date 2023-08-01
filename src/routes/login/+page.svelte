@@ -3,10 +3,19 @@
 	import { browser } from '$app/environment';
 	import posthog from 'posthog-js';
 	import { page } from '$app/stores';
+	import Fa from 'svelte-fa';
+	import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
+	import { onMount } from 'svelte';
 
 	$: $page.url.pathname, browser && posthog.capture('$pageview', { loginpage: true });
 
 	export let form;
+
+	onMount(() => {
+		if (browser) {
+			import('$lib/utils/tooltip');
+		}
+	});
 </script>
 
 <svelte:head>
@@ -93,6 +102,12 @@
 									type="submit">Sign In</button>
 							</div>
 						</form>
+					</div>
+
+					<div
+						class="absolute right-2 top-2 cursor-pointer"
+						data-tippy="Creds <br />Email: admin@admin.com <br/>Pass: admin">
+						<Fa icon={faInfoCircle} />
 					</div>
 				</div>
 				<div class="flex flex-wrap mt-6 relative">
