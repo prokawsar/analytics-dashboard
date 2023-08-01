@@ -5,8 +5,8 @@ import 'tippy.js/animations/scale.css';
 tippy('[data-tippy]', {
 	content: (reference) => reference.getAttribute('data-tippy') || '',
 	allowHTML: true,
-	placement: 'bottom',
+	placement: 'auto',
 	arrow: true,
-	delay: 200,
+	delay: 100,
 	animation: 'scale'
 });
