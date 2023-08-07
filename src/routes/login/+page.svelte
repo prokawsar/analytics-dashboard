@@ -105,8 +105,9 @@
 					</div>
 
 					<div
-						class="absolute right-2 top-2 cursor-pointer"
+						class="absolute flex flex-row gap-2 items-center right-2 top-2 cursor-pointer"
 						data-tippy="Creds <br />Email: admin@admin.com <br/>Pass: admin">
+						<span class="text-xs text-gray-400">Hover me</span>
 						<Fa icon={faInfoCircle} />
 					</div>
 				</div>
